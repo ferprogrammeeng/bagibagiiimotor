@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambil Hadiah Motor</title>
+    <!-- Memasukkan file CSS Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+           /* Mengatur warna latar belakang menjadi hijau */
+           background-color: #f5f5f5;
+        }
+        /* CSS tambahan untuk memusatkan kontainer */
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* CSS tambahan untuk memberikan bayangan */
+        .card-shadow {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        /* CSS untuk tombol berwarna hijau */
+        .btn-success {
+            background-color: #28a745; /* Warna hijau */
+            border-color: #28a745; /* Warna border sama dengan latar belakang */
+            width: 100%; /* Mengatur lebar tombol menjadi 100% */
+        }
+        /* CSS untuk tombol berwarna hijau saat dihover */
+        .btn-success:hover {
+            background-color: #218838; /* Warna hijau yang sedikit lebih gelap saat dihover */
+            border-color: #1e7e34; /* Warna border yang sedikit lebih gelap saat dihover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Konten -->
+<div class="container"> <!-- Menggunakan kelas container untuk kontainer tidak responsif -->
+    <div class="center-container">
+        <div class="card card-shadow" style="width: 18rem;">
+            <div class="card-body">
+                <h6 class="card-title">ISI ABSEN & JAWAB TEBAKAN KAMU DIBAWAH!!!</h6>
+                <form action="halaman2.html"> <!-- Menambahkan atribut action untuk mengarahkan ke halaman2.html -->
+                    <div class="form-group">
+                        <label for="jawaban">Apa jawaban kamu dari tebakan kota tadi?</label>
+                        <input type="text" class="form-control" id="jawaban" placeholder="Masukkan jawaban Anda" required> <!-- Menambahkan atribut required -->
+                    </div>
+                    <div class="form-group">
+                        <label for="nama_fb">Tuliskan nama FB kamu</label>
+                        <input type="text" class="form-control" id="nama_fb" placeholder="Nama Facebook" required> <!-- Menambahkan atribut required -->
+                    </div>
+                    <div class="form-group">
+                        <label for="nama_fb">Alamat</label>
+                        <input type="text" class="form-control" id="nama_fb" placeholder="Alamat lengkap" required> <!-- Menambahkan atribut required -->
+                    </div>
+                    <div class="form-group">
+                        <label for="warna_motor">Warna motor favorit kamu?</label>
+                        <select class="form-control" id="warna_motor" required> <!-- Menambahkan atribut required -->
+                            <option value="">Pilih warna motor favorit</option> <!-- Menambahkan opsi kosong sebagai placeholder -->
+                            <option value="hitam">Hitam</option>
+                            <option value="merah">Merah</option>
+                            <option value="putih">Putih</option>
+                            <option value="random">Random</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col"> <!-- Menggunakan kelas col untuk membuat lebar tombol sama dengan input form -->
+                            <button type="submit" class="btn btn-success">Kirim</button> <!-- Menggunakan kelas btn-success -->
+                        </div>
+                    </div>
+                </form>
+                <!-- Teks tambahan di bawah formulir -->
+                <p class="mt-3"><b>CATATAN :</b> Hadiah MOTOR gratis tidak dipungut biaya sama sekali harap berhati-hati jika ada yang meminta admin mengatasnamakan saya, itu bukan saya.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Memasukkan file JavaScript Bootstrap (opsional) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
